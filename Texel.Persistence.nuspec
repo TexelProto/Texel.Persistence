@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Texel.Persistence</id>
+    <version>1.0.0</version>
+    <title>Texel.Persistence</title>
+    <authors>Texel</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/TexelProto/Texel.Persistence</projectUrl>
+    <description>
+      Di oriented persistence system
+    </description>
+    <dependencies>
+      <group targetFramework="net47">
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="6.0.0"/>
+        <dependency id="Microsoft.Extensions.Options" version="6.0.0"/>
+        <dependency id="Newtonsoft.Json" version="13.0.1"/>
+        <dependency id="Newtonsoft.Json.Bson" version="1.0.2"/>
+        <dependency id="Serilog" version="2.10.0"/>
+        <dependency id="Texel.Utilities" version="1.0.0"/>
+        <dependency id="Texel.Lifetimes" version="1.0.0"/>
+        <dependency id="System.IO.Compression" version="4.3.0"/>
+      </group>
+      <group targetFramework="net48">
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="6.0.0"/>
+        <dependency id="Microsoft.Extensions.Options" version="6.0.0"/>
+        <dependency id="Newtonsoft.Json" version="13.0.1"/>
+        <dependency id="Newtonsoft.Json.Bson" version="1.0.2"/>
+        <dependency id="Serilog" version="2.10.0"/>
+        <dependency id="Texel.Utilities" version="1.0.0"/>
+        <dependency id="Texel.Lifetimes" version="1.0.0"/>
+        <dependency id="System.IO.Compression" version="4.3.0"/>
+      </group>
+      <group targetFramework="netcoreapp3.1">
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="6.0.0"/>
+        <dependency id="Microsoft.Extensions.Options" version="6.0.0"/>
+        <dependency id="Newtonsoft.Json" version="13.0.1"/>
+        <dependency id="Newtonsoft.Json.Bson" version="1.0.2"/>
+        <dependency id="Serilog" version="2.10.0"/>
+        <dependency id="Texel.Utilities" version="1.0.0"/>
+        <dependency id="Texel.Lifetimes" version="1.0.0"/>
+        <dependency id="System.IO.Compression" version="4.3.0"/>
+      </group>
+      <group targetFramework="netstandard2.1">
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="6.0.0"/>
+        <dependency id="Microsoft.Extensions.Options" version="6.0.0"/>
+        <dependency id="Newtonsoft.Json" version="13.0.1"/>
+        <dependency id="Newtonsoft.Json.Bson" version="1.0.2"/>
+        <dependency id="Serilog" version="2.10.0"/>
+        <dependency id="Texel.Utilities" version="1.0.0"/>
+        <dependency id="Texel.Lifetimes" version="1.0.0"/>
+        <dependency id="System.IO.Compression" version="4.3.0"/>
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="LICENSE"/>
+    <file src="README.md"/>
+    <file src="bin/Release/net47/Texel.Persistence.dll" target="lib/net47"/>
+    <file src="bin/Release/net48/Texel.Persistence.dll" target="lib/net48"/>
+    <file src="bin/Release/netcoreapp3.1/Texel.Persistence.dll" target="lib/netcoreapp3.1"/>
+    <file src="bin/Release/netstandard2.1/Texel.Persistence.dll" target="lib/netstandard2.1"/>
+  </files>
+</package>
