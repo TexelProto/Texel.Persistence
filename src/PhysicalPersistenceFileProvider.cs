@@ -1,4 +1,5 @@
 using System.IO;
+using Microsoft.Extensions.Options;
 
 namespace Texel.Persistence
 {
@@ -6,9 +7,9 @@ namespace Texel.Persistence
 	{
 		private readonly string rootDirectory;
 
-		public PhysicalPersistenceFileProvider(string rootDirectory)
+		public PhysicalPersistenceFileProvider(IOptions<PhysicalPersistenceOptions> options)
 		{
-			this.rootDirectory = rootDirectory;
+			this.rootDirectory = options.Value.SavedataDirectory;
 
 			if (Directory.Exists( this.rootDirectory ) == false)
 				Directory.CreateDirectory( this.rootDirectory );
